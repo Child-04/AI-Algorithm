@@ -1,7 +1,6 @@
 body {
   font-family: 'Forum', cursive;
-  background-color: #FFFDF6;
-  color: #2E4A3C;
+  background-color: #000000;  
   margin: 0;
   padding: 0;
   text-align: center;
@@ -12,22 +11,36 @@ header {
 }
 
 h1 {
-  font-size: 3em;
-  color: #2E4A3C;
+  font-size: 4em;
+  background: linear-gradient(to right, #0067ff,  #8900e8); /* Pha trộn màu */
+  -webkit-background-clip: text; /* Cắt nền theo hình dạng chữ */
+  -webkit-text-fill-color: transparent; /* Làm cho màu chữ trở nên trong suốt */
 }
 
 p {
-  font-size: 1.2em;
-  color: #4C6B4F;
+  font-size: 1.5em;
+  background: linear-gradient(to right, #0067ff,  #dfd7e4); /* Pha trộn màu */
+  -webkit-background-clip: text; /* Cắt nền theo hình dạng chữ */
+  -webkit-text-fill-color: transparent; /* Làm cho màu chữ trở nên trong suốt */
+}
+.logo {
+  font-size: 1.5em;
+  color: #3a7ce0;
+  text-decoration: none;  
+  transition: color 0.3s ease;
+    position: absolute;
+      top: 50px;
+    left: 100px;
+    display: flex;
+    align-items: center;
 }
 
-.buttons {
-  margin-top: 30px;
+.logo:hover {
+  color: #46dfb1; 
 }
-
 .button {
   display: inline-block;
-  background-color: #4C6B4F;
+  background: linear-gradient(to right, #0067ff,  #8900e8); 
   color: #FFF;
   padding: 15px 30px;
   text-decoration: none;
@@ -35,20 +48,18 @@ p {
   border-radius: 30px;
   font-size: 1.2em;
   transition: background-color 0.3s;
+  width: 200px;
 }
 
 .button:hover {
-  background-color: #3A4A3A;
+  background: linear-gradient(to left, #e2e2eb, #2525b9);
 }
 
+.button i {
+  margin-left: 10px; 
+}
 .benefits {
   margin-top: 50px;
-}
-
-h2 {
-  font-size: 2.5em;
-  color: #2E4A3C;
-  margin-top: 20px;
 }
 
 /* Chat Button */
@@ -56,21 +67,33 @@ h2 {
   position: fixed;
   bottom: 20px;
   right: 20px;
+} 
+.response-message {
+  display: flex; /* Sử dụng flexbox để căn chỉnh */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  font-size: 1em; /* Kích thước chữ */
+  color: #000000;
 }
-
 .chat-button {
-  background-color: #4C6B4F;
+  background-color: #2d1ed8;
   color: white;
   padding: 15px 30px;
   border-radius: 50px;
-  font-size: 1.2em;
+  font-size: 1.2em; /* Increase button font size */
   cursor: pointer;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* Center the content vertically */
 }
 
 .chat-button:hover {
   background-color: #3A4A3A;
+}
+
+.chat-button i {
+  font-size: 1.5em; /* Increase icon size */
+  margin-right: 10px; /* Space between the icon and text */
 }
 
 /* Chatbox */
@@ -79,7 +102,8 @@ h2 {
   position: fixed;
   bottom: 80px;
   right: 20px;
-  width: 300px;
+  width: 350px;
+  height: 500px;
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -89,7 +113,7 @@ h2 {
 }
 
 .chat-header {
-  background-color: #2E4A3C;
+  background-color: #2d1ed8;
   color: white;
   padding: 10px;
   display: flex;
@@ -103,13 +127,13 @@ h2 {
 
 .close-btn {
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .chat-body {
   padding: 15px;
   background-color: #F1F1F1;
-  min-height: 150px;
+  min-height: 370px;
 }
 
 .status-indicator {
@@ -136,7 +160,7 @@ h2 {
 }
 
 .send-btn {
-  background-color: #4C6B4F;
+  background-color: #2d1ed8;
   color: white;
   padding: 8px 15px;
   border-radius: 20px;
@@ -145,5 +169,5 @@ h2 {
 }
 
 .send-btn:hover {
-  background-color: #3A4A3A;
+  background-color: #0d1736;
 }

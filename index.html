@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorithm</title>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <a href="index.html" class="logo">Algorithm</a>
         <h1>Chào mừng đến với Algorithm</h1>
         <p>Hướng dẫn thuật toán Danh sách liên kết và Duyệt cây nhị phân trong môn học cấu trúc dữ liệu và giải thuật</p>
     </header>
     <section class="buttons">
-        <a href="#" class="button">Danh sách liên kết đơn</a>
-        <a href="#" class="button">Danh sách liên kết đôi</a>
-        <a href="#" class="button">Cây nhị phân tìm kiếm</a>
-    </section>
-    <section class="benefits">
-        <h2>Lợi Ích của Lớp Học</h2>
+        <a href="stack.html" class="button">Stack <i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="#" class="button">Queue <i class="fa-solid fa-arrow-right-long"></i></a>
     </section>
 
     <!-- Chat Button -->
     <div class="chat-container">
-        <button id="chat-button" class="chat-button">Cùng trò chuyện nào!</button>
+        <button id="chat-button" class="chat-button"> <i class="fa-solid fa-comment-dots"></i> Cùng trò chuyện nào!</button>
+
     </div>
 
     <!-- Chatbox Popup -->
@@ -33,7 +32,7 @@
             <span id="close-chat" class="close-btn">&times;</span>
         </div>
         <div class="chat-body">
-            <p><span class="status-indicator"></span> Chúng tôi sẽ trả lời sau vài phút</p>
+            <p class="response-message"><span class="status-indicator"></span> Chúng tôi sẽ trả lời sau vài phút</p>
         </div>
         <div class="chat-footer">
             <input type="text" placeholder="Viết tin nhắn của bạn..." class="chat-input">
